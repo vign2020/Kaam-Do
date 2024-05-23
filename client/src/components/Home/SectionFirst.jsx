@@ -31,20 +31,30 @@ const SectionFirst = () => {
                             placeholder="Search job title"
                             sx={{ flex: 1, marginRight: 2, '& .MuiOutlinedInput-root': { borderRadius: '20px', background: 'white', color: 'black' } }}
                         />
-                        <TextField
-                            variant="outlined"
-                            placeholder="Location"
-                            sx={{ flex: 1, '& .MuiOutlinedInput-root': { borderRadius: '20px', background: 'white', color: 'black' }}}
-                            InputProps={{
-                                endAdornment: (
-                                    <InputAdornment position="end">
-                                        <IconButton sx={{ bgcolor: 'orange', borderRadius: '20px', color: 'white' }}>
-                                            <SearchIcon />
-                                        </IconButton>
-                                    </InputAdornment>
-                                ),
-                            }}
-                        />
+                           <TextField
+      variant="outlined"
+      placeholder="Location"
+      sx={{ flex: 1, '& .MuiOutlinedInput-root': { borderRadius: '20px', background: 'white', color: 'black' }}}
+      InputProps={{
+        endAdornment: (
+          <InputAdornment position="end">
+            <IconButton
+              sx={{
+                bgcolor: 'rgb(242, 151, 166)',
+                borderRadius: '20px',
+                color: 'rgb(225, 109, 128)',
+                '&:hover': {
+                  bgcolor: 'rgb(220, 20, 60)', // Adjust the color as needed
+                }
+              }}
+            >
+              <SearchIcon />
+            </IconButton>
+          </InputAdornment>
+        ),
+      }}
+    />
+
                     </Box>
                     <List sx={{ marginTop: 4 }}>
                         <ListItem>
